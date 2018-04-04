@@ -6,7 +6,7 @@ export const authStorage = {
 }
 
 export const api = axios.create({
-	baseURL: 'http://localhost:3000'
+	baseURL: 'http://ec2-18-144-10-33.us-west-1.compute.amazonaws.com:3000'
 })
 
 export const saveCode = (code) => {
