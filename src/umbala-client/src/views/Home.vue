@@ -2,7 +2,7 @@
 	<div class="home">
 		<div>
 			<button class="button__instagram">
-				<a href="http://localhost:3000/login">Login with Instagram</a>
+				<a href="http://ec2-13-56-78-27.us-west-1.compute.amazonaws.com:3000/login">Login with Instagram</a>
 			</button>
 		</div>
 	</div>
