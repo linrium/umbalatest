@@ -7,7 +7,9 @@
 
 		<table style="margin: 20px auto">
 			<tr v-for="(row, index) in matrix" :key="index">
-				<td v-for="val in row" :key="val">{{val}}</td>
+				<td v-for="val in row" :key="val">
+					<span>{{val}}</span>
+				</td>
 			</tr>
 		</table>
 
@@ -52,3 +54,25 @@ export default {
 	}
 }
 </script>
+
+<style lang="stylus" scoped>
+input {
+	border: 1px solid #2c3e50
+	padding: 10px
+	font-size: 20px
+	margin: 10px
+}
+
+button {
+	font-size: 20px
+	padding: 10px
+	color: white
+	background: #42b983
+	border: none
+	margin: 10px
+	cursor: pointer
+}
+span {
+	font-size: 20px
+}
+</style>

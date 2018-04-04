@@ -4,11 +4,10 @@ import (
 	"time"
 	"sync"
 	"os"
-	"fmt"
 )
 
 type Run interface {
-	Step()
+	Operate()
 	Logger()
 }
 
@@ -26,9 +25,8 @@ func Start(run Run, ticker *time.Ticker, wg *sync.WaitGroup, done chan bool) {
 		select {
 		case <-ticker.C:
 			run.Logger()
-			run.Step()
+			run.Operate()
 		case <-done:
-			fmt.Printf("Helloooooo")
 			ticker.Stop()
 			os.Exit(-1)
 			return

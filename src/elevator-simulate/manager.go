@@ -15,7 +15,7 @@ func (this *Manager) Logger() {
 	fmt.Println("--------------------")
 }
 
-func (this *Manager) Step() {
+func (this *Manager) Operate() {
 	for _, e := range this.Elevators {
 		if e.IsOpen == false {
 			e.pickUp()
