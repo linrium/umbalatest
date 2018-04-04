@@ -1,0 +1,11 @@
+package main
+
+const (
+	TOTAL_FLOORS = 10
+
+	DEFAULT_FLOOR = 0
+
+	TOTAL_ELEVATORS = 3
+
+	TOTAL_PASSENGER_REQUESTS = 4
+)
